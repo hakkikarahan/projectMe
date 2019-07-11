@@ -21,5 +21,4 @@ urlpatterns = [
     path('', views.index, name='index'),
     path('help/',include('cv.urls')),
     path('admin/', admin.site.urls),
-
 ]

@@ -1,12 +1,129 @@
 <!DOCTYPE html>
+{% load staticfiles %}
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Hoşgeldin.</title>
+    <meta charset="UTF-8">
+    <title>Hakkı KARAHAN - {{indexContext}}</title>
+    <link rel="stylesheet" type="text/css" href={% static 'css/site.css' %}>
 </head>
 <body>
-  {{indexContext}}
+<header>
+    <h1>Hakkı KARAHAN</h1>
+    <img src={%static "img/image.jpeg" %} width="150" alt="Hakkı KARAHAN"/>
+    <nav>
+        <ul>
+            <li><a href="#summary">Summary</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <article>
+        <section id="summary">
+            <h2>
+                Summary
+            </h2>
+            <p>
+                A <b>software developer</b> with 10 years experience, who loves to share his knowledge with people.
+            </p>
+        </section>
+        <section id="work">
+            <h2>Work</h2>
+            <ul>
+                <li>
+                    <strong >Agito &amp; Company</strong><br>
+                    <a href="http://agito.com.tr" target ="blank" itemprop="url">agito.com.tr</a><br>
+                    <small>Senior Software Developer</small>
+                    <br>
+                    October 2018 - Present<br>
+                </li>
+
+                <li>
+                    <strong >Dokuz Eylül University</strong><br>
+                    <a href="http://github.com/hakkikarahan" itemprop="url">github.com/hakkikarahan</a><br>
+                    <small>Senior Software Developer</small>
+                    <br>
+                    March 2014 - October 2018<br>
+                </li>
+                <li>
+                    <strong >Obase &amp; Company</strong><br>
+                    <a href="http://obase.com" target="blank" itemprop="url">obase.com</a><br>
+                    <small>Senior Software Developer</small>
+                    <br>
+                    May 2012 - March 2014<br>
+                </li>
+                <li>
+                    <strong >Probel</strong><br>
+                    <a href="http://probel.com.tr" target="blank" itemprop="url">probel.com.tr</a><br>
+                    <small>Senior Software Developer</small>
+                    <br>
+                    March 2010 - May 2012<br>
+                </li>
+            </ul>
+        </section>
+        <section id="education">
+            <h2>Education</h2>
+            <ul>
+                <li>
+                    <strong >Dokuz Eylül University</strong><br>
+                    <a href="http://deu.edu.tr" itemprop="url">Dokuz Eylül</a><br>
+                    <small>Computer Programming</small>
+                    <br>
+                    2004 - 2007<br>
+                </li>
+            </ul>
+        </section>
+        <section id="languages">
+            <h2>Languages</h2>
+            <ul>
+                <li>
+                    Turkish - Native
+                </li>
+                <li>
+                    English - Fluent
+                </li>
+                <li>
+                    German - Beginner
+                </li>
+            </ul>
+        </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <ol>
+                <li>
+                    Oracle Forms - Reports / Plsql
+                </li>
+                <li>
+                    C# -.net core / MSSQL
+                </li>
+                <li>
+                    HTML / CSS - SASS
+                </li>
+                <li>
+                    JavaScript (React / Vue / Node)
+                </li>
+            </ol>
+        </section>
+    </article>
+</main>
+<footer>
+    <h2>Social</h2>
+    <nav>
+        <ul>
+            <li><a href="http://linkedin.com/in/hakkikarahan">Linkedin</a></li>
+        </ul>
+    </nav>
+    <section id="contact">
+        <h2>Contact</h2>
+        <ul>
+            <li>
+                <a href="mailto:hakkikarahan@gmail.com">E-mail</a>
+            </li>
+        </ul>
+    </section>
+</footer>
 </body>
 </html>
